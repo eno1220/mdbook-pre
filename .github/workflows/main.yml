@@ -13,7 +13,10 @@ jobs:
         with:
           ref: main
       - name: Build
-        uses: ./.github/actions/build
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: "latest"
+      - run: mdbook build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
