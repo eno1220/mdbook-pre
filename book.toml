@@ -1,0 +1,11 @@
+[book]
+authors = ["eno1220"]
+description = "hogehoge"
+language = "ja"
+multilingual = false
+src = "src"
+title = "mdBook-eno1220"
+
+[build]
+build-dir = "book"                # the directory where the output is placed
+create-missing = false             # whether or not to create missing pages
